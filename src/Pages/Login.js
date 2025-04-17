@@ -9,7 +9,7 @@ function Login() {
       <Logo/>
       <Background/>
       <p className='footer'>Copyright 2025 - Todos os Direitos Reservados <br></br>
-        Desenvolvido por Universidade MV
+        Desenvolvido por <strong>Universidade MV</strong>
       </p>
     </div>
   );

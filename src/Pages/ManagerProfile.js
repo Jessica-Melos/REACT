@@ -1,13 +1,20 @@
-
-import Background from '../Componentes/Background/background';  // Certifique-se de que a importação está correta
+ import Background from "../Componentes/Background/background";
+ import Header from "../Componentes/Header/Header";
+ import './ManagerProfile.css';
 
 const ManagerProfile = () => {
   return (
-    <div>
-        <Background/>
-      <h1>Perfil do Gestor</h1>
+    <>
+      <Background/>
+      <Header/>
+
+
+    
+    <div style={{position:"relative",zIndex:1}}>
+      
       {/* Adicione mais conteúdo aqui */}
     </div>
+    </>
   );
 };
 

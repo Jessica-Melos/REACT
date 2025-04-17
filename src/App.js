@@ -9,7 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/login" />}/>
         <Route path="/login" element={<Login />} />
-        <Route path="/login" element={<ManagerProfile />} />
+        <Route path="/managerProfile" element={<ManagerProfile />} />
       </Routes>
     </Router>
   );

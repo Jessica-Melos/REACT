@@ -1,0 +1,144 @@
+/*Base Mobile - 360px*/
+
+#container{
+    position: fixed;
+    background-color: #fff;
+    top: 25%;
+    left: 5%;
+    width: 90vw;
+    height: 50vh;
+    display: flex;
+    padding: 1rem;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    outline: 2px solid rgb(212, 209, 211);
+    outline-offset: 5px;
+}
+
+#container h2 {
+    position: absolute;
+    text-align: center;
+    font-size: 17px;
+    top: 70px;
+    color: #0a8b77;
+    font-family: Poppins;
+}
+
+
+#input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    transform: translateX(50px);
+}
+
+#input-container span{
+    position: relative;
+    font-size: 11px;
+    top:-30px;
+    transform: translateX(-48px);
+    width: 400px;
+    text-align: center;
+    color: #a3a2a2;
+}
+
+input {
+    position: relative;
+    margin: 1px;
+    padding: 1px;
+    width: 70%;
+    border-style: none;
+    background: transparent;
+    font-family: Poppins;
+    font-weight: 500;
+    background-color: #f7f2f2;
+    border-radius: 9px;
+    top:-10px;
+    left: 10px;
+
+}
+
+
+#mais {
+    background-color: transparent !important;
+    border-style: none;
+    position: absolute;
+    left: 125px;
+    top: 110px;
+}
+
+#mais img {
+    width: 35px;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#container{
+    background-color: #fff;
+    width: 80%;
+    height: 50vh;
+
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    transform: translateX(-70px);
+}
+
+input{
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgb(233, 235, 235);
+    
+}
+
+
+#mais {
+    background-color: transparent !important;
+    position: absolute;
+    left: 160px;
+    top: 110px;
+    border-style: none;
+
+}
+
+#mais img {
+    width: 25px;
+    vertical-align: middle;
+}*/

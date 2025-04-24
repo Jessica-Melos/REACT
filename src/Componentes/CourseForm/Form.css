@@ -3,9 +3,9 @@
 #container{
     position: fixed;
     background-color: #fff;
-    top: 25%;
-    left: 5%;
-    width: 90vw;
+    top: 35%;
+    left: 2%;
+    width: 95vw;
     height: 50vh;
     display: flex;
     padding: 1rem;
@@ -21,9 +21,10 @@
     position: absolute;
     text-align: center;
     font-size: 17px;
-    top: 70px;
+    top: 30px;
     color: #0a8b77;
     font-family: Poppins;
+    left: 85px;
 }
 
 
@@ -38,7 +39,7 @@
 #input-container span{
     position: relative;
     font-size: 11px;
-    top:-30px;
+    top:-25px;
     transform: translateX(-48px);
     width: 400px;
     text-align: center;
@@ -48,17 +49,19 @@
 input {
     position: relative;
     margin: 1px;
-    padding: 1px;
-    width: 70%;
+    padding: 9px;
+    width: 65%;
     border-style: none;
     background: transparent;
     font-family: Poppins;
     font-weight: 500;
     background-color: #f7f2f2;
     border-radius: 9px;
-    top:-10px;
-    left: 10px;
-
+    top:-8px;
+    left: 15px;
+    font-size: 12px;
+    text-align: center;
+    
 }
 
 
@@ -66,17 +69,34 @@ input {
     background-color: transparent !important;
     border-style: none;
     position: absolute;
-    left: 125px;
-    top: 110px;
+    left: 130px;
+    top: 160px;
 }
 
 #mais img {
-    width: 35px;
+    width: 30px;
     vertical-align: middle;
 }
 
 
-
+.curso-item {
+    padding: 10px;
+    background-color: #f4f4f4;
+    margin: 6px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .curso-item:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .tachado {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
 
 
 

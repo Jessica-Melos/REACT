@@ -1,6 +1,7 @@
  import Background from "../Componentes/Background/background";
  import Header from "../Componentes/Header/Header";
  import Form from "../Componentes/CourseForm/Form";
+ import Footer from '../Componentes/Footer/Footer';
  import './ManagerProfile.css';
 
 const ManagerProfile = () => {
@@ -9,6 +10,7 @@ const ManagerProfile = () => {
       <Background/>
       <Header/>
       <Form/>
+      <Footer/>
       
 
 

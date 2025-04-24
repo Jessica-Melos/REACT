@@ -1,0 +1,14 @@
+#saudacao{
+    position: absolute;
+    top: 150px; 
+    left: 42px;
+    color: #f3e2e9;
+    font-weight: 400;
+    font-size: 10px;
+    text-align: center;
+    text-shadow:
+    0 1px 4px rgba(0, 0, 0, 0.4),
+    0 2px 8px rgba(0, 0, 0, 0.3),
+    0 4px 12px rgba(0, 0, 0, 0.5);
+  
+  }

@@ -16,6 +16,7 @@ function Saudacao() {
         minute: "2-digit"
       });
 
+      
       let saudacaoTexto;
       const horaAtual = agora.getHours();
 
@@ -28,7 +29,7 @@ function Saudacao() {
       }
 
       setMensagem(
-        `${saudacaoTexto} Hoje é ${diaSemana}, ${dia} de ${mes} de ${ano}, e agora são ${hora}.`
+        `<strong style="font-size:1rem;">${saudacaoTexto}</strong> <br>Hoje é ${diaSemana}, ${dia} de ${mes} de ${ano}, agora são ${hora}.`
       );
     };
 
@@ -39,7 +40,8 @@ function Saudacao() {
   }, []);
 
   return (
-    <p className="saudacao">{mensagem}</p>
+    <p className="saudacao" dangerouslySetInnerHTML={{ __html: mensagem }} />
+
   );
 }
 

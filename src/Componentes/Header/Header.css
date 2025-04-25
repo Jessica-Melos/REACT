@@ -1,7 +1,7 @@
 /*Cabeçalho*/
 #profile {
     width: 100%;
-    height: 140px; 
+    height: 110px; 
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   }
   
@@ -16,16 +16,16 @@
   }
   
   .logo_icon {
-    width: 60px;
+    margin-top:5%;
+    width: 15%;
     border-radius: 50%; 
     opacity: 60%;
-    object-fit: cover; 
-   
+    object-fit: cover;
   }
 
 .nome_gestor {
     color: rgb(39, 37, 37);
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
     margin-bottom: 0;
     z-index: 10;
@@ -33,7 +33,7 @@
   
 .nome_diretoria {
     color: rgb(247, 242, 242);
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400;
     margin: 0;
     padding:0;
@@ -52,7 +52,7 @@
 
   #plan{
     position: relative;
-    top:3px;
+    top:10px;
     width: 210px;
     border-radius: 10px;
     background-color: #f5f1f1;
@@ -62,5 +62,55 @@
     box-shadow: 0px 4px 15px rgba(94, 93, 93, 0.9);
   }
   
- 
+/*Menu*/
+  .menu-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1000;
+    font-family: Poppins;
+  }
   
+  .menu-lista {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: white;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    list-style: none;
+    z-index: 999;
+
+      /* Animação */
+  opacity: 0;
+  transform: scale(0.95s);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.6s ease-out;
+  }
+
+  .menu-lista.aberto {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+  }
+  
+  .menu-lista li {
+    margin: 8px 0;
+  }
+  
+  .menu-lista li a {
+    text-decoration: none;
+    color: #311919;
+    font-size: 12px;
+    display: flex;
+  align-items: center;
+  gap: 8px; /* Espaço entre ícone e texto */
+  }
+  
+
+
+
+

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import CourseList from "../List/CourseList";
+import { SlList } from "react-icons/sl";
 import "./Form.css";
-import CourseList from "./List"; // ✅ importação
+
 
 const Form = () => {
   const [curso, setCurso] = useState("");
@@ -65,8 +67,14 @@ const Form = () => {
               />
             </button>
             <button className="ver-lista-btn" onClick={() => setModo("lista")}>
-              Ver Lista de Cursos
+          < SlList size={30}/>
+
+           
+           
             </button>
+
+
+
           </div>
         </div>
       ) : (
@@ -80,5 +88,8 @@ const Form = () => {
     </div>
   );
 };
+
+
+
 
 export default Form;

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {FaChevronDown} from 'react-icons/fa';
 import "./Dropdown.css"; // se você estiver usando um arquivo de estilo separado
 
 const Dropdown = () => {
@@ -37,6 +38,7 @@ const Dropdown = () => {
     <div className="dropdown">
       <div className="dropdown-selected" onClick={toggleDropdown}>
         {selected ? selected.label : "Selecione uma opção"}
+        <FaChevronDown style={{marginLeft:"46px"}} />
       </div>
       {isOpen && (
         <div className="dropdown-options">

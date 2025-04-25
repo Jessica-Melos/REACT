@@ -3,10 +3,10 @@
 #container{
     position: fixed;
     background-color: #fff;
-    top: 35%;
-    left: 2%;
-    width: 95vw;
-    height: 50vh;
+    top: 32%;
+    left: 5%;
+    width: 90vw;
+    height: 55vh;
     display: flex;
     padding: 1rem;
     border-radius: 10px;
@@ -21,10 +21,10 @@
     position: absolute;
     text-align: center;
     font-size: 17px;
-    top: 30px;
+    top: 9%;
     color: #0a8b77;
     font-family: Poppins;
-    left: 85px;
+    left: 25%;
 }
 
 
@@ -39,8 +39,8 @@
 #input-container span{
     position: relative;
     font-size: 11px;
-    top:-25px;
-    transform: translateX(-48px);
+    top:-20px;
+    transform: translateX(-50px);
     width: 400px;
     text-align: center;
     color: #a3a2a2;
@@ -50,7 +50,7 @@ input {
     position: relative;
     margin: 1px;
     padding: 9px;
-    width: 65%;
+    width: 75%;
     border-style: none;
     background: transparent;
     font-family: Poppins;
@@ -58,7 +58,7 @@ input {
     background-color: #f7f2f2;
     border-radius: 9px;
     top:-8px;
-    left: 15px;
+    left: 1px;
     font-size: 12px;
     text-align: center;
     
@@ -78,7 +78,14 @@ input {
     vertical-align: middle;
 }
 
-
+.ver-lista-btn{
+    position: absolute;
+    border-style: none;
+    font-size: 10px;
+    background-color: transparent;
+    top:100%;
+    left: 25%;
+}
 .curso-item {
     padding: 10px;
     background-color: #f4f4f4;

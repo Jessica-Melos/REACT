@@ -1,5 +1,7 @@
 
 import AppRoutes from './Routes/App.Routes';
+import 'normalize.css';
+
 
 
 

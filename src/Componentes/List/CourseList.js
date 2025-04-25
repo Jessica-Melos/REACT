@@ -1,5 +1,5 @@
 import React from "react";
-import "./Form.css"; // se os estilos estiverem juntos
+
 
 const CourseList = ({ cursos, onToggleSelecionado, onRemover, onVoltar }) => {
   const totalCarga = cursos.reduce((acc, item) => acc + item.carga, 0);

@@ -28,7 +28,7 @@ const Header = () => {
         <ul className={`menu-lista ${menuAberto ? "aberto" : ""}`}>
           <li><a href="#inicio"><FaHome />PA </a></li>
           <li><a href="#perfil"><FaUser />PDI </a></li>
-          <li><a href="#config"><FaCog/>MPC</a></li>
+          <li><a href="#config"><FaCog/>MPCP</a></li>
         </ul>
       )}
 
@@ -36,7 +36,7 @@ const Header = () => {
         <ManagerIcon />
 
         <div className="text-logo">
-          <h1 className="nome_gestor">Nome do Gestor Aqui</h1>
+          <h1 className="nome_gestor">Fabiana Alaíde de Lima</h1>
           <h2 className="nome_diretoria">Diretoria Corporativa de Gente e Gestão</h2>
           <Dropdown />
           <div id="saudacao">

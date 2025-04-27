@@ -1,6 +1,10 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import CourseList from "../List/CourseList";
 import { SlList } from "react-icons/sl";
+import { FaPlus } from "react-icons/fa"
+import { IoArrowUndo } from "react-icons/io5";
+import { IoHome } from "react-icons/io5";
 import "./Form.css";
 
 
@@ -9,6 +13,8 @@ const Form = () => {
   const [carga, setCarga] = useState("");
   const [cursosAdicionados, setCursosAdicionados] = useState([]);
   const [modo, setModo] = useState("form");
+
+  const navigate = useNavigate(); // Declarar o hook useNavigate
 
   const adicionarCurso = () => {
     if (curso.trim() && carga.trim()) {
@@ -59,23 +65,34 @@ const Form = () => {
               value={carga}
               onChange={(e) => setCarga(e.target.value)}
             />
-            <button id="mais" onClick={adicionarCurso}>
-              <img
-                src="/Imagens/adicionar (2).png"
-                alt="Adicionar Curso"
-                title="Adicionar"
-              />
+            <button onClick={adicionarCurso} title="Adicionar Curso" className="botao-adicionar">
+              <FaPlus size={16}/>
             </button>
+            </div>
+
+            
+            <div className="menu-footer">
+
+            <button className="home">
+             <IoHome size={19}  color= "#fff"/>
+             </button>
+
             <button className="ver-lista-btn" onClick={() => setModo("lista")}>
-          < SlList size={30}/>
+              <span title="Visualizar Cursos">
+                < SlList size={20} color= "#fff"/>
+             </span>
+             
+             </button>
+             <button onClick={() => navigate(-1)} className="voltar-btn">
+              <span title="Voltar">
+                <IoArrowUndo size={20} color= "#fff" />
+              </span>
+             </button>
+              
+             
+             </div>
 
-           
-           
-            </button>
-
-
-
-          </div>
+          
         </div>
       ) : (
         <CourseList

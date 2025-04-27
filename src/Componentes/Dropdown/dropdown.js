@@ -1,10 +1,10 @@
-import { useState } from "react";
-import {FaChevronDown} from 'react-icons/fa';
-import "./Dropdown.css"; // se você estiver usando um arquivo de estilo separado
+import { useState, useEffect } from "react";
+import { FaChevronDown, FaChevronUp } from 'react-icons/fa'; // vou usar o "Up" também
+import "./Dropdown.css";
 
 const Dropdown = () => {
-  const [isOpen, setIsOpen] = useState(false); // Para controlar a abertura/fechamento
-  const [selected, setSelected] = useState(null); // Para armazenar o item selecionado
+  const [isOpen, setIsOpen] = useState(false);
+  const [selected, setSelected] = useState(null);
 
   const options = [
     { label: "Opção 1", value: "1" },
@@ -12,22 +12,20 @@ const Dropdown = () => {
     { label: "Opção 3", value: "3" }
   ];
 
-  const toggleDropdown = () => setIsOpen(!isOpen); // Abre/fecha o dropdown
+  const toggleDropdown = () => setIsOpen(!isOpen);
 
   const handleSelect = (option) => {
-    setSelected(option); // Atualiza o item selecionado
-    setIsOpen(false); // Fecha o dropdown após selecionar
+    setSelected(option);
+    setIsOpen(false);
   };
 
-  // Para fechar o dropdown quando clicar fora dele
   const handleClickOutside = (e) => {
     if (!e.target.closest(".dropdown")) {
       setIsOpen(false);
     }
   };
 
-  // Adicionando o evento de clique fora do componente (para fechar)
-  useState(() => {
+  useEffect(() => {
     document.addEventListener("click", handleClickOutside);
     return () => {
       document.removeEventListener("click", handleClickOutside);
@@ -37,8 +35,12 @@ const Dropdown = () => {
   return (
     <div className="dropdown">
       <div className="dropdown-selected" onClick={toggleDropdown}>
-        {selected ? selected.label : "Selecione uma opção"}
-        <FaChevronDown style={{marginLeft:"46px"}} />
+        <span>{selected ? selected.label : "Selecione uma opção"}</span>
+        {isOpen ? (
+          <FaChevronUp className="dropdown-icon" />
+        ) : (
+          <FaChevronDown className="dropdown-icon" />
+        )}
       </div>
       {isOpen && (
         <div className="dropdown-options">

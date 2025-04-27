@@ -21,16 +21,18 @@ function Saudacao() {
       const horaAtual = agora.getHours();
 
       if (horaAtual >= 6 && horaAtual < 12) {
-        saudacaoTexto = "Bom dia!";
+        saudacaoTexto = "Bom dia,";
       } else if (horaAtual >= 12 && horaAtual < 18) {
-        saudacaoTexto = "Boa tarde!";
+        saudacaoTexto = "Boa tarde,";
       } else {
-        saudacaoTexto = "Boa noite!";
+        saudacaoTexto = "Boa noite,";
       }
 
       setMensagem(
-        `<strong style="font-size:1rem;">${saudacaoTexto}</strong> <br>Hoje é ${diaSemana}, ${dia} de ${mes} de ${ano}, agora são ${hora}.`
+        `<div style="font-size:1.1rem; font-weight:bold;">${saudacaoTexto} Fabiana!</div>
+         <div style="margin-top: 5px;">Hoje é ${diaSemana}, ${dia} de ${mes} de ${ano}, agora são ${hora}.</div>`
       );
+      
     };
 
     atualizarMensagem();
@@ -40,8 +42,9 @@ function Saudacao() {
   }, []);
 
   return (
+    <div id="saudacao-wrapper">
     <p className="saudacao" dangerouslySetInnerHTML={{ __html: mensagem }} />
-
+    </div>
   );
 }
 

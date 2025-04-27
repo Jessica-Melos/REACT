@@ -1,4 +1,6 @@
 import React from "react";
+import { IoArrowUndo } from "react-icons/io5";
+
 
 
 const CourseList = ({ cursos, onToggleSelecionado, onRemover, onVoltar }) => {
@@ -27,11 +29,12 @@ const CourseList = ({ cursos, onToggleSelecionado, onRemover, onVoltar }) => {
         <div id="botoes-container">
           <button onClick={onRemover}>Excluir</button>
           <button disabled={cursos.length === 0}>Inserir</button>
-          <button
+          <button className="voltar-btn"
             onClick={onVoltar}
             style={{ backgroundColor: "#ddd", marginLeft: "10px" }}
           >
-            Voltar para Adição
+            
+            <IoArrowUndo size={20}  />
           </button>
         </div>
       </div>
@@ -43,6 +46,11 @@ const CourseList = ({ cursos, onToggleSelecionado, onRemover, onVoltar }) => {
           <span id="unidadeHoras">horas</span>
         </p>
       </div>
+
+      
+                  
+                  
+              
     </div>
   );
 };
